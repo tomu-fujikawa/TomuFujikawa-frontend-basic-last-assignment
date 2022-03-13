@@ -2,7 +2,6 @@
 
 @media (min-width: $breakpoint-xs) {
   .btn-text {
-    border: solid 1px $black;
     padding-left: 64px;
     padding-right: 64px;
     padding-bottom: 12.5px;
@@ -11,11 +10,11 @@
     font-family: $fontfamily-gothic;
     background-color: $black;
     color: $white;
+    transition: 0.2s ease;
   }
 
   .btn-text:hover {
-    border: solid 1px $orange_zorba;
-    background-color: $orange_zorba;
+    background-color: $orange_bistre;
     color: $white;
     text-decoration: none;
   }
@@ -23,7 +22,6 @@
 
 @media (min-width: $breakpoint-md) {
   .btn-text {
-    border: solid 1px $black;
     padding-left: 49px;
     padding-right: 49px;
     padding-bottom: 17.5px;
@@ -32,11 +30,11 @@
     font-family: $fontfamily-gothic;
     background-color: $black;
     color: $white;
+    transition: 0.2s ease;
   }
 
   .btn-text:hover {
-    border: solid 1px $orange_zorba;
-    background-color: $orange_zorba;
+    background-color: $orange_bistre;
     color: $white;
     text-decoration: none;
   }
@@ -44,7 +42,6 @@
 
 @media (min-width: $breakpoint-lg) {
   .btn-text {
-    border: solid 1px $black;
     padding-left: 74px;
     padding-right: 74px;
     padding-bottom: 17.5px;
@@ -53,11 +50,11 @@
     font-family: $fontfamily-gothic;
     background-color: $black;
     color: $white;
+    transition: 0.2s ease;
   }
 
   .btn-text:hover {
-    border: solid 1px $orange_zorba;
-    background-color: $orange_zorba;
+    background-color: $orange_bistre;
     color: $white;
     text-decoration: none;
   }
