@@ -13,9 +13,9 @@
       padding: 17.5px 74px;
     }
   }
-}
-.btn-text:hover {
-  background-color: $orange_bistre;
-  color: $white;
-  text-decoration: none;
+  &:hover {
+    background-color: $orange_bistre;
+    color: $white;
+    text-decoration: none;
+  }
 }
