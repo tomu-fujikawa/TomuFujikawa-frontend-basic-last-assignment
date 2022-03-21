@@ -9,9 +9,9 @@
   cursor: pointer;
   @media (min-width: $breakpoint-md) {
     padding: 17.5px 49px;
-    @media (min-width: $breakpoint-lg) {
-      padding: 17.5px 74px;
-    }
+  }
+  @media (min-width: $breakpoint-lg) {
+    padding: 17.5px 74px;
   }
   &:hover {
     background-color: $orange_bistre;
