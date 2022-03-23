@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+.message {
+  text-align: center;
+}
+.message-subtitle {
+  font-family: $fontfamily-mincho;
+  font-size: $fontsize-l;
+}
+.message-content {
+  margin-top: 8px;
+  font-size: $fontsize-s;
+}
+
+@media (min-width: $breakpoint-lg) {
+  .message-subtitle {
+    font-size: $fontsize-xl;
+  }
+  .message-content {
+    margin-top: 10px;
+  }
+}
