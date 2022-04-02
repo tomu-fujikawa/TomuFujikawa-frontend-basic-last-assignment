@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+
+.vertical-middle {
+  vertical-align: middle;
+}
+.english {
+  font-size: $fontsize-l;
+  font-family: $fontfamily-mincho;
+  @media (min-width: $breakpoint-lg) {
+    font-size: $fontsize-xxl;
+  }
+}
+.japanese {
+  font-size: $fontsize-m;
+  margin-left: 16px;
+}
