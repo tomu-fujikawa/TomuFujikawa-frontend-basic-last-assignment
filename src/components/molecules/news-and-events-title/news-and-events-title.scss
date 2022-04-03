@@ -1,16 +1,29 @@
 @use "../../variables" as *;
 
-.vertical-middle {
-  vertical-align: middle;
+@mixin font-weight {
+  font-weight: 400px;
 }
-.english {
-  font-size: $fontsize-l;
-  font-family: $fontfamily-mincho;
+
+.news-title {
+  width: 133px;
   @media (min-width: $breakpoint-lg) {
-    font-size: $fontsize-xxl;
+    width: 186px;
   }
-}
-.japanese {
-  font-size: $fontsize-m;
-  margin-left: 16px;
+  .vertical-middle {
+    vertical-align: middle;
+  }
+  .english {
+    @include font-weight;
+    margin-right: 16px;
+    font-size: $fontsize-l;
+    font-family: $fontfamily-mincho;
+    margin-bottom: 32px;
+    @media (min-width: $breakpoint-lg) {
+      font-size: $fontsize-xxl;
+    }
+  }
+  .japanese {
+    @include font-weight;
+    font-size: $fontsize-m;
+  }
 }
