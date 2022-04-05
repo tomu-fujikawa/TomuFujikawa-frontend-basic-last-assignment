@@ -3,17 +3,16 @@
 .news-title {
   font-weight: normal;
   width: 133px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
   @media (min-width: $breakpoint-lg) {
     width: 186px;
-  }
-  .vertical-middle {
-    vertical-align: middle;
   }
   .english {
     margin-right: 16px;
     font-size: $fontsize-l;
     font-family: $fontfamily-mincho;
-    margin-bottom: 32px;
     @media (min-width: $breakpoint-lg) {
       font-size: $fontsize-xxl;
     }
