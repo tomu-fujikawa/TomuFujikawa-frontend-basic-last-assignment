@@ -1,23 +1,17 @@
 @use "../../variables" as *;
 
-.news-title {
+.english {
   font-weight: normal;
-  width: 133px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  font-size: $fontsize-l;
+  font-family: $fontfamily-mincho;
   @media (min-width: $breakpoint-lg) {
-    width: 186px;
+    font-size: $fontsize-xxl;
   }
-  .english {
-    margin-right: 16px;
-    font-size: $fontsize-l;
-    font-family: $fontfamily-mincho;
-    @media (min-width: $breakpoint-lg) {
-      font-size: $fontsize-xxl;
-    }
-  }
-  .japanese {
-    font-size: $fontsize-m;
-  }
+}
+.japanese {
+  vertical-align: middle;
+  font-size: $fontsize-m;
 }
