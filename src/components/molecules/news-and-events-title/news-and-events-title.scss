@@ -1,5 +1,13 @@
 @use "../../variables" as *;
 
+.news-title {
+  font-size: 0;
+  width: 133px;
+  margin-bottom: 32px;
+  @media (min-width: $breakpoint-lg) {
+    width: 186px;
+  }
+}
 .english {
   font-weight: normal;
   display: inline-block;
