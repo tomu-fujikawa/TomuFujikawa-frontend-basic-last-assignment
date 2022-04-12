@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+.news-title {
+  font-size: 0;
+  margin-bottom: 32px;
+  display: inline-block;
+  .english {
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+    font-size: $fontsize-l;
+    font-family: $fontfamily-mincho;
+    @media (min-width: $breakpoint-lg) {
+      font-size: $fontsize-xxl;
+    }
+  }
+  .japanese {
+    vertical-align: middle;
+    font-size: $fontsize-m;
+  }
+}
