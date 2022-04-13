@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+
+.news-list {
+  color: $black;
+  font-size: $fontsize-s;
+  &:hover {
+    color: $gray_nobel;
+    text-decoration: none;
+  }
+  .fas {
+    margin-left: 16px;
+  }
+}
