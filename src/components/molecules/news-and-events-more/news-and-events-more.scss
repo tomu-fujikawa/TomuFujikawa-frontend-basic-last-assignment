@@ -1,8 +1,9 @@
 @use "../../variables" as *;
 
-.news-list {
+.news-list-link {
   color: $black;
   font-size: $fontsize-s;
+  transition: 0.2s ease;
   &:hover {
     color: $gray_nobel;
     text-decoration: none;
