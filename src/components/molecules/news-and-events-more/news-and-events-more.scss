@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+.news-list-link {
+  color: $black;
+  font-size: $fontsize-s;
+  transition: 0.2s ease;
+  &:hover {
+    color: $gray_nobel;
+    text-decoration: none;
+  }
+  .fas {
+    margin-left: 16px;
+  }
+}
