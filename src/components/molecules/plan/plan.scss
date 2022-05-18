@@ -1,0 +1,76 @@
+@use "../../variables" as *;
+
+@mixin font-weight-700 {
+  font-weight: 700;
+}
+@mixin vertical-spacing {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@mixin frame {
+  border: solid 1px $gray_gainsboro;
+  margin: 0px 0px -1px;
+}
+@mixin plan-template {
+  text-align: center;
+  font-size: $fontsize-s;
+  color: $black;
+  .plan-text {
+    @include font-weight-700;
+    color: $white;
+    background-color: $orange_zorba;
+    font-size: $fontsize-l;
+    @include vertical-spacing;
+    @include frame;
+  }
+  .price-container {
+    .¥-font-adjustment {
+      @include font-weight-700;
+      font-size: $fontsize-l;
+      color: $orange_bistre;
+      vertical-align: sub;
+    }
+    .figure {
+      @include font-weight-700;
+      font-size: $fontsize-xxl;
+      color: $orange_bistre;
+    }
+    .monthly-price {
+      margin-top: 16px;
+    }
+    background-color: $gray_desertStorm;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include frame;
+  }
+  .admission {
+    @include vertical-spacing;
+    @include frame;
+  }
+  .weekday-business-hours {
+    @include vertical-spacing;
+    @include frame;
+  }
+  .weekend-business-hours {
+    @include vertical-spacing;
+    @include frame;
+  }
+  .plan-description {
+    @include vertical-spacing;
+    @include frame;
+  }
+}
+
+.plan {
+  &:nth-child(2n + 1) {
+    @include plan-template;
+  }
+  &:nth-child(2n) {
+    border: solid 5px $orange_bistre;
+    @include plan-template;
+    .plan-text {
+      border: solid 1px $orange_bistre;
+      background-color: $orange_bistre;
+    }
+  }
+}
