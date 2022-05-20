@@ -43,6 +43,10 @@
   }
   .plan-descriptions {
     @include frame-and-vertical-space;
+    .plan-descriptions-blank {
+      word-break: break-all;
+      padding: 0 80px;
+    }
   }
 }
 
