@@ -3,65 +3,52 @@
 @mixin font-weight-700 {
   font-weight: 700;
 }
-@mixin vertical-spacing {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 @mixin frame {
   border: solid 1px $gray_gainsboro;
   margin: 0px 0px -1px;
+}
+@mixin frame-and-vertical-space {
+  @include frame;
+  padding: 20px 0;
 }
 @mixin plan-template {
   text-align: center;
   font-size: $fontsize-s;
   color: $black;
   .plan-text {
-    @include font-weight-700;
     color: $white;
     background-color: $orange_zorba;
     font-size: $fontsize-l;
-    @include vertical-spacing;
-    @include frame;
+    @include font-weight-700;
+    @include frame-and-vertical-space;
   }
   .price-container {
     .¥-font-adjustment {
-      @include font-weight-700;
       font-size: $fontsize-l;
       color: $orange_bistre;
       vertical-align: sub;
+      @include font-weight-700;
     }
     .figure {
-      @include font-weight-700;
       font-size: $fontsize-xxl;
       color: $orange_bistre;
+      @include font-weight-700;
     }
     .monthly-price {
       margin-top: 16px;
     }
     background-color: $gray_desertStorm;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
     @include frame;
   }
-  .admission {
-    @include vertical-spacing;
-    @include frame;
-  }
-  .weekday-business-hours {
-    @include vertical-spacing;
-    @include frame;
-  }
-  .weekend-business-hours {
-    @include vertical-spacing;
-    @include frame;
-  }
-  .plan-description {
-    @include vertical-spacing;
-    @include frame;
+  .plan-descriptions {
+    @include frame-and-vertical-space;
   }
 }
 
 .plan {
+  list-style-type: none;
+  padding-left: 0;
   &:nth-child(2n + 1) {
     @include plan-template;
   }
