@@ -1,0 +1,58 @@
+@use "../../variables" as *;
+
+@mixin font-weight-700 {
+  font-weight: 700;
+}
+@mixin frame {
+  border: solid 1px $gray_gainsboro;
+  margin: 0px 0px -1px;
+}
+.plan {
+  &:nth-child(2n) {
+    border: solid 5px $orange_bistre;
+    .plan-text {
+      border: solid 1px $orange_bistre;
+      background-color: $orange_bistre;
+    }
+  }
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  font-size: $fontsize-s;
+  color: $black;
+  .plan-text {
+    color: $white;
+    background-color: $orange_zorba;
+    font-size: $fontsize-l;
+    @include font-weight-700;
+    @include frame;
+    padding: 20px 0;
+  }
+  .price-container {
+    .¥-font-adjustment {
+      font-size: $fontsize-l;
+      color: $orange_bistre;
+      vertical-align: sub;
+      @include font-weight-700;
+    }
+    .figure {
+      font-size: $fontsize-xxl;
+      color: $orange_bistre;
+      @include font-weight-700;
+    }
+    .monthly-price {
+      margin-top: 16px;
+    }
+    background-color: $gray_desertStorm;
+    padding: 24px 0;
+    @include frame;
+  }
+  .plan-descriptions {
+    @include frame;
+    padding: 20px 0;
+    .plan-descriptions-blank {
+      word-break: break-all;
+      padding: 0 80px;
+    }
+  }
+}
