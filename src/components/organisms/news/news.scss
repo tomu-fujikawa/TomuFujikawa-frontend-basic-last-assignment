@@ -1,71 +1,28 @@
 @use "../../variables" as *;
 
-@mixin hover {
-  text-decoration: none;
-  cursor: pointer;
-}
-.news {
-  width: 460px;
-}
-.news-title {
-  font-size: 0;
-  margin-bottom: 32px;
-  display: inline-block;
-  .english {
-    font-weight: normal;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 16px;
-    font-size: $fontsize-l;
-    font-family: $fontfamily-mincho;
-    @media (min-width: $breakpoint-lg) {
-      font-size: $fontsize-xxl;
-    }
-  }
-  .japanese {
-    vertical-align: middle;
-    font-size: $fontsize-m;
-  }
-}
 .news-border {
   font-size: 0;
   border: solid 1px $gray_gainsboro;
   margin: 0px 0px -1px;
-  .news-day {
-    color: $gray_nobel;
-    font-size: $fontsize-xs;
-    margin: 20px 0 0 20px;
-  }
-  .news-href {
-    @include hover;
+  .news-day-and-theme-wrap {
+    margin: 20px;
+    .news-day {
+      color: $gray_nobel;
+      font-size: $fontsize-xs;
+    }
     .news-theme {
-      margin: 10px 0 19px 20px;
+      margin-top: 10px;
       color: $black;
       font-size: $fontsize-m;
-      width: 414px;
+      width: 90%;
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      transition: 0.2s ease;
-      &:hover {
-        color: $orange_bistre;
-      }
     }
   }
 }
 .news-list-link-container {
   text-align: right;
   margin-top: 30px;
-  .news-list-link {
-    color: $black;
-    font-size: $fontsize-s;
-    &:hover {
-      color: $gray_nobel;
-      text-decoration: none;
-    }
-    .fas {
-      margin-left: 16px;
-    }
-  }
 }
