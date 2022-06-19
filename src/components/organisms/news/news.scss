@@ -3,18 +3,20 @@
   color: $orange_bistre;
   cursor: pointer;
 }
-
-.news-border {
-  font-size: 0;
-  border: solid 1px $gray_gainsboro;
-  margin: 0px 0px -1px;
-  .news-day-and-theme-wrap {
-    margin: 20px;
-    .news-day {
-      color: $gray_nobel;
-      font-size: $fontsize-xs;
-    }
-    .news-theme-link {
+.news-theme-link {
+  &:hover {
+    text-decoration: none;
+  }
+  .news-border {
+    font-size: 0;
+    border: solid 1px $gray_gainsboro;
+    margin: 0px 0px -1px;
+    .news-day-and-theme-wrap {
+      margin: 20px;
+      .news-day {
+        color: $gray_nobel;
+        font-size: $fontsize-xs;
+      }
       .news-theme {
         margin: 10px 0 0;
         color: $black;
