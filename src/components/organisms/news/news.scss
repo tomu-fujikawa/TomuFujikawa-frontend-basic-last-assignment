@@ -1,11 +1,12 @@
 @use "../../variables" as *;
-@mixin news-hover {
-  color: $orange_bistre;
-  cursor: pointer;
-}
+
 .news-theme-link {
+  color: $black;
+  transition: 0.2s ease;
   &:hover {
     text-decoration: none;
+    color: $orange_bistre;
+    cursor: pointer;
   }
   .news-border {
     font-size: 0;
@@ -19,17 +20,12 @@
       }
       .news-theme {
         margin: 10px 0 0;
-        color: $black;
         font-size: $fontsize-m;
         width: 90%;
         display: inline-block;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        transition: 0.2s ease;
-        &:hover {
-          @include news-hover;
-        }
       }
     }
   }
