@@ -31,48 +31,45 @@
       font-size: $fontsize-m;
     }
   }
-
-  .events-border {
-    border: solid 1px $gray_gainsboro;
-    margin: 0px 0px -1px;
-  }
-  .events-day {
-    color: $gray_nobel;
-    font-size: $fontsize-xs;
-  }
-  .events-theme-and-day-wrap {
-    list-style-type: none;
-    padding-left: 0;
-    padding: 10px 20px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 0;
-    flex-grow: 1;
-    .events-theme {
-      margin-bottom: 8px;
-      color: $black;
-      font-size: $fontsize-m;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      transition: 0.2s ease;
+  .events-href {
+    text-decoration: none;
+    .events-border {
+      border: solid 1px $gray_gainsboro;
+      margin: 0px 0px -1px;
+      .events-theme-and-day-wrap {
+        list-style-type: none;
+        padding-left: 0;
+        padding: 10px 20px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+        flex-grow: 1;
+        color: $black;
+        transition: 0.2s ease;
+        &:hover {
+          text-decoration: none;
+          color: $orange_bistre;
+          cursor: pointer;
+        }
+        .events-theme {
+          margin-bottom: 8px;
+          font-size: $fontsize-m;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          transition: 0.2s ease;
+        }
+        .events-day {
+          color: $gray_nobel;
+          font-size: $fontsize-xs;
+        }
+      }
     }
   }
   .events-list-link-container {
     text-align: right;
     margin: 40px 0 31px;
-    .events-list-link {
-      color: $black;
-      font-size: $fontsize-s;
-      &:hover {
-        color: $gray_nobel;
-        text-decoration: none;
-      }
-      .fas {
-        margin-left: 16px;
-      }
-    }
   }
   @media (min-width: $breakpoint-lg) {
     .events-border {
@@ -86,19 +83,28 @@
       }
       .events-img1 {
         @include events-img;
-        background-image: url("2.png");
-        transition: 0.5s ease;
+        background-image: url("./2.png");
       }
       .events-img2 {
         @include events-img;
-        background-image: url("1.png");
-        transition: 0.5s ease;
+        background-image: url("./1.png");
       }
       .events-img3 {
         @include events-img;
-        background-image: url("3.png");
-        transition: 0.5s ease;
+        background-image: url("./3.png");
       }
     }
   }
+}
+.events-border:hover .events-img1 {
+  transition: 0.5s ease;
+  @include events-picture-hover;
+}
+.events-border:hover .events-img2 {
+  transition: 0.5s ease;
+  @include events-picture-hover;
+}
+.events-border:hover .events-img3 {
+  transition: 0.5s ease;
+  @include events-picture-hover;
 }
