@@ -1,0 +1,36 @@
+@use "../../variables" as *;
+
+.news-theme-link {
+  color: $black;
+  transition: 0.2s ease;
+  &:hover {
+    text-decoration: none;
+    color: $orange_bistre;
+    cursor: pointer;
+  }
+  .news-border {
+    font-size: 0;
+    border: solid 1px $gray_gainsboro;
+    margin: 0px 0px -1px;
+    .news-day-and-theme-wrap {
+      margin: 20px;
+      .news-day {
+        color: $gray_nobel;
+        font-size: $fontsize-xs;
+      }
+      .news-theme {
+        margin: 10px 0 0;
+        font-size: $fontsize-m;
+        width: 90%;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+.news-list-link-container {
+  text-align: right;
+  margin: 30px 0 35px;
+}
