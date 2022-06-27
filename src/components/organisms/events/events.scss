@@ -6,8 +6,6 @@
 @mixin events-img {
   height: 141px;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .events {
@@ -36,15 +34,14 @@
     .events-border {
       border: solid 1px $gray_gainsboro;
       margin: 0px 0px -1px;
+      .events-img {
+        display: none;
+      }
       .events-theme-and-day-wrap {
-        list-style-type: none;
-        padding-left: 0;
         padding: 10px 20px 16px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 0;
-        flex-grow: 1;
         color: $black;
         transition: 0.2s ease;
         &:hover {
@@ -69,42 +66,26 @@
   }
   .events-list-link-container {
     text-align: right;
-    margin: 40px 0 31px;
+    margin: 30px 0 35px;
   }
   @media (min-width: $breakpoint-lg) {
     .events-border {
       display: flex;
       .events-img-hidden {
         overflow: hidden;
-        width: 221.11px;
+        width: 221px;
       }
       .events-theme-and-day-wrap {
         padding: 0 24px;
       }
-      .events-img1 {
+      .events-img {
+        display: block !important;
         @include events-img;
-        background-image: url("./2.png");
-      }
-      .events-img2 {
-        @include events-img;
-        background-image: url("./1.png");
-      }
-      .events-img3 {
-        @include events-img;
-        background-image: url("./3.png");
+        transition: all 0.5s ease;
       }
     }
   }
 }
-.events-border:hover .events-img1 {
-  transition: 0.5s ease;
-  @include events-picture-hover;
-}
-.events-border:hover .events-img2 {
-  transition: 0.5s ease;
-  @include events-picture-hover;
-}
-.events-border:hover .events-img3 {
-  transition: 0.5s ease;
+.events-border:hover .events-img {
   @include events-picture-hover;
 }
