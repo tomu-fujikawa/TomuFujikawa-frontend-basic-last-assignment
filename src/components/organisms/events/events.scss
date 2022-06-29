@@ -9,83 +9,79 @@
 }
 
 .events {
-  .events-title {
-    font-size: 0;
-    margin-bottom: 32px;
+  .english {
+    font-weight: normal;
     display: inline-block;
-    .english {
-      font-weight: normal;
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 16px;
-      font-size: $fontsize-l;
-      font-family: $fontfamily-mincho;
-      @media (min-width: $breakpoint-lg) {
-        font-size: $fontsize-xxl;
-      }
-    }
-    .japanese {
-      vertical-align: middle;
-      font-size: $fontsize-m;
+    vertical-align: middle;
+    margin-right: 16px;
+    font-size: $fontsize-l;
+    font-family: $fontfamily-mincho;
+    @media (min-width: $breakpoint-lg) {
+      font-size: $fontsize-xxl;
     }
   }
-  .events-href {
-    text-decoration: none;
-    .events-border {
-      border: solid 1px $gray_gainsboro;
-      margin: 0px 0px -1px;
-      .events-img {
-        display: none;
-      }
-      .events-theme-and-day-wrap {
-        padding: 10px 20px 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $black;
-        transition: 0.2s ease;
-        &:hover {
-          text-decoration: none;
-          color: $orange_bistre;
-          cursor: pointer;
-        }
-        .events-theme {
-          margin-bottom: 8px;
-          font-size: $fontsize-m;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          transition: 0.2s ease;
-        }
-        .events-day {
-          color: $gray_nobel;
-          font-size: $fontsize-xs;
-        }
-      }
+  .japanese {
+    vertical-align: middle;
+    font-size: $fontsize-m;
+  }
+}
+.events-href {
+  text-decoration: none;
+  .events-border {
+    border: solid 1px $gray_gainsboro;
+    margin: 0px 0px -1px;
+    .events-img {
+      display: none;
     }
-  }
-  .events-list-link-container {
-    text-align: right;
-    margin: 30px 0 35px;
-  }
-  @media (min-width: $breakpoint-lg) {
-    .events-border {
+    .events-theme-and-day-wrap {
+      padding: 10px 20px 16px;
       display: flex;
-      .events-img-hidden {
+      flex-direction: column;
+      justify-content: center;
+      color: $black;
+      transition: 0.2s ease;
+      &:hover {
+        text-decoration: none;
+        color: $orange_bistre;
+        cursor: pointer;
+      }
+      .events-theme {
+        margin-bottom: 8px;
+        font-size: $fontsize-m;
         overflow: hidden;
-        width: 221px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: 0.2s ease;
       }
-      .events-theme-and-day-wrap {
-        padding: 0 24px;
-      }
-      .events-img {
-        display: block !important;
-        @include events-img;
-        transition: all 0.5s ease;
+      .events-day {
+        color: $gray_nobel;
+        font-size: $fontsize-xs;
       }
     }
   }
 }
+.events-list-link-container {
+  text-align: right;
+  margin: 30px 0 35px;
+}
+@media (min-width: $breakpoint-lg) {
+  .events-border {
+    display: flex;
+    .events-img-hidden {
+      overflow: hidden;
+      width: 221px;
+    }
+    .events-theme-and-day-wrap {
+      padding: 0 24px;
+    }
+    .events-img {
+      display: block !important;
+      @include events-img;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
 .events-border:hover .events-img {
   @include events-picture-hover;
 }
