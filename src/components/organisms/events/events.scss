@@ -26,7 +26,7 @@
   }
 }
 .events-href {
-  text-decoration: none;
+  text-decoration: none !important;
   .events-border {
     border: solid 1px $gray_gainsboro;
     margin: 0px 0px -1px;
@@ -41,7 +41,6 @@
       color: $black;
       transition: 0.2s ease;
       &:hover {
-        text-decoration: none;
         color: $orange_bistre;
         cursor: pointer;
       }
