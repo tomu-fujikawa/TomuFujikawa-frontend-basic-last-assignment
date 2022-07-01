@@ -1,0 +1,100 @@
+@use "../../variables" as *;
+
+.navbar {
+  background-color: $black;
+  padding: 0 16px !important;
+  .navbar-brand {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  @media (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+    margin: 0 !important;
+    padding: 0 30px !important;
+    .navbar-brand {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .home-container {
+      margin-top: 0 !important;
+    }
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      .dropdown-item:hover {
+        transition: background-color 0.2s ease;
+        background-color: $orange_bistre;
+      }
+    }
+    .nav-link {
+      margin: 35px 0 28px !important;
+      padding: 0 20px !important;
+    }
+    .dropdown-item {
+      padding: 18px 90px 18px 18px;
+    }
+    .btn-dropdown {
+      display: none !important;
+    }
+    .dropdown-menu {
+      margin-top: -1px !important;
+    }
+  }
+  .navbar-toggler {
+    padding: 0;
+    .navbar-toggler-icon {
+      background-image: url("./humberger-icon.svg");
+    }
+  }
+
+  .navbar-nav {
+    line-height: 30px;
+    .home-container {
+      margin-top: 7px;
+    }
+    .nav-link {
+      background-color: transparent;
+      color: $white;
+      @media (min-width: $breakpoint-xl) {
+        &:hover {
+          color: $gray_nobel;
+        }
+      }
+    }
+    .btn {
+      padding: 0;
+    }
+    .dropdown-menu {
+      border-radius: 0 !important;
+      background-color: $black !important;
+      padding: 0;
+      .dropdown-item {
+        color: $white !important;
+        padding-left: 12px;
+        &:hover {
+          transition: background-color 0.2s ease;
+          background-color: $orange_bistre !important;
+        }
+      }
+    }
+    .dropdown-head {
+      display: flex;
+      align-content: flex-start;
+      justify-content: space-between;
+    }
+    .concept-dropdown {
+      background-color: $black;
+      padding-top: 0;
+      margin-top: 0;
+      .dropdown-item {
+        color: $white;
+        &:hover {
+          background-color: $black;
+        }
+      }
+    }
+    .download-container {
+      margin-bottom: 7px;
+    }
+  }
+}
