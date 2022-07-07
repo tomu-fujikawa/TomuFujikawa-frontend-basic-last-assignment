@@ -1,86 +1,65 @@
 @use "../../variables" as *;
 
-@mixin events-picture-hover {
-  transform: scale(1.2, 1.2);
-}
-@mixin events-img {
-  height: 141px;
-  background-size: cover;
-}
-
 .events {
-  .english {
-    font-weight: normal;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 16px;
-    font-size: $fontsize-l;
-    font-family: $fontfamily-mincho;
-    @media (min-width: $breakpoint-lg) {
-      font-size: $fontsize-xxl;
+  .events-href {
+    &:hover {
+      text-decoration: none;
     }
-  }
-  .japanese {
-    vertical-align: middle;
-    font-size: $fontsize-m;
-  }
-}
-.events-href {
-  text-decoration: none !important;
-  .events-border {
-    border: solid 1px $gray_gainsboro;
-    margin: 0px 0px -1px;
-    .events-img {
-      display: none;
-    }
-    .events-theme-and-day-wrap {
-      padding: 10px 20px 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: $black;
-      transition: 0.2s ease;
-      &:hover {
-        color: $orange_bistre;
-        cursor: pointer;
+    .events-border {
+      border: solid 1px $gray_gainsboro;
+      margin: 0px 0px -1px;
+      .events-img {
+        display: none;
       }
-      .events-theme {
-        margin-bottom: 8px;
-        font-size: $fontsize-m;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+      .events-theme-and-day-wrap {
+        padding: 10px 20px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $black;
         transition: 0.2s ease;
-      }
-      .events-day {
-        color: $gray_nobel;
-        font-size: $fontsize-xs;
+        &:hover {
+          color: $orange_bistre;
+          cursor: pointer;
+        }
+        .events-theme {
+          margin-bottom: 8px;
+          font-size: $fontsize-m;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          transition: 0.2s ease;
+        }
+        .events-day {
+          color: $gray_nobel;
+          font-size: $fontsize-xs;
+        }
       }
     }
   }
-}
-.events-list-link-container {
-  text-align: right;
-  margin: 30px 0 35px;
-}
-@media (min-width: $breakpoint-lg) {
-  .events-border {
-    display: flex;
-    .events-img-hidden {
-      overflow: hidden;
-      width: 221px;
-    }
-    .events-theme-and-day-wrap {
-      padding: 0 24px;
-    }
-    .events-img {
-      display: block !important;
-      @include events-img;
-      transition: all 0.5s ease;
+  .events-list-link-container {
+    text-align: right;
+    margin: 30px 0 35px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    .events-border {
+      display: flex;
+      .events-img-hidden {
+        overflow: hidden;
+        width: 221px;
+        .events-img {
+          display: block;
+          height: 141px;
+          background-size: cover;
+          transition: all 0.5s ease;
+        }
+      }
+      .events-theme-and-day-wrap {
+        padding: 0 24px;
+      }
     }
   }
-}
-
-.events-border:hover .events-img {
-  @include events-picture-hover;
+  .events-border:hover .events-img {
+    transform: scale(1.2, 1.2);
+  }
 }
