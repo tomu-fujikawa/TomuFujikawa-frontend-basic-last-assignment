@@ -2,7 +2,7 @@
 
 .navbar {
   background-color: $black;
-  padding: 0 16px !important;
+  padding: 0 16px;
   .navbar-brand {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -10,14 +10,14 @@
   }
   @media (min-width: $breakpoint-xl) {
     background-color: $black_50;
-    margin: 0 !important;
-    padding: 0 30px !important;
+    margin: 0;
+    padding: 0 30px;
     .navbar-brand {
       margin-top: 0;
       margin-bottom: 0;
     }
-    .home-container {
-      margin-top: 0 !important;
+    .navbar-nav div.home-container {
+      margin-top: 0;
     }
     .nav-item.dropdown:hover .dropdown-menu {
       display: block;
@@ -26,22 +26,23 @@
         background-color: $orange_bistre;
       }
     }
-    .nav-link {
-      margin: 35px 0 28px !important;
-      padding: 0 20px !important;
+    .navbar-nav a.nav-link {
+      margin: 35px 0 28px;
+      padding: 0 20px;
     }
     .dropdown-item {
       padding: 18px 90px 18px 18px;
     }
     .btn-dropdown {
-      display: none !important;
+      display: none;
     }
-    .dropdown-menu {
-      margin-top: -1px !important;
+    .navbar-nav div.dropdown-menu {
+      margin-top: -1px;
     }
   }
   .navbar-toggler {
     padding: 0;
+    outline: none;
     .navbar-toggler-icon {
       background-image: url("./humberger-icon.svg");
     }
@@ -63,18 +64,14 @@
     }
     .btn {
       padding: 0;
+      box-shadow: none;
     }
     .dropdown-menu {
-      border-radius: 0 !important;
-      background-color: $black !important;
+      border-radius: 0;
       padding: 0;
       .dropdown-item {
-        color: $white !important;
+        color: $white;
         padding-left: 12px;
-        &:hover {
-          transition: background-color 0.2s ease;
-          background-color: $orange_bistre !important;
-        }
       }
     }
     .dropdown-head {
