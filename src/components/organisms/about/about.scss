@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+.about-img-arrangement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .about-img {
+    width: 100%;
+  }
+}
+.about-message {
+  background-color: $white_smoke;
+  .about-message-title {
+    color: $orange_bistre;
+  }
+}
