@@ -1,33 +1,27 @@
 @use "../../variables" as *;
-.about-container {
-  width: 720px;
+.about-img-arrangement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   @media (min-width: $breakpoint-lg) {
-    width: 960px;
+    grid-template-columns: repeat(4, 1fr);
   }
-  .about-img-arrangement {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    @media (min-width: $breakpoint-lg) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .about-img {
-      width: 100%;
-    }
+  .about-img {
+    width: 100%;
   }
-  .about-message {
-    padding: 32px 20px;
-    background-color: $white_smoke;
+}
+.about-message {
+  padding: 32px 20px;
+  background-color: $white_smoke;
+  @media (min-width: $breakpoint-lg) {
+    padding: 52px 20px;
+  }
+  .about-message-title {
+    color: $orange_bistre;
+  }
+  .about-message-content {
+    line-height: 28px;
     @media (min-width: $breakpoint-lg) {
-      padding: 52px 20px;
-    }
-    .about-message-title {
-      color: $orange_bistre;
-    }
-    .about-message-content {
-      line-height: 28px;
-      @media (min-width: $breakpoint-lg) {
-        line-height: 36px;
-      }
+      line-height: 36px;
     }
   }
 }
