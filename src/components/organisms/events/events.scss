@@ -1,13 +1,16 @@
 @use "../../variables" as *;
 
 .events {
-  .events-href {
-    &:hover {
-      text-decoration: none;
+  .events-border {
+    border: solid 1px $gray_gainsboro;
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-bottom: none;
     }
-    .events-border {
-      border: solid 1px $gray_gainsboro;
-      margin: 0px 0px -1px;
+    .events-href {
+      &:hover {
+        text-decoration: none;
+      }
       .events-img {
         display: none;
       }
@@ -43,7 +46,9 @@
   }
   @media (min-width: $breakpoint-lg) {
     .events-border {
-      display: flex;
+      .events-href {
+        display: flex;
+      }
       .events-img-hidden {
         overflow: hidden;
         width: 221px;
