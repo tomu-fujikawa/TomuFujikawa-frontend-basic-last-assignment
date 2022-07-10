@@ -7,38 +7,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 0;
-  }
-  @media (min-width: $breakpoint-xl) {
-    background-color: $black_50;
-    margin: 0;
-    padding: 0 30px;
-    .navbar-brand {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    .navbar-nav div.home-container {
-      margin-top: 0;
-    }
-    .nav-item.dropdown:hover .dropdown-menu {
-      display: block;
-      .dropdown-item:hover {
-        transition: background-color 0.2s ease;
-        background-color: $orange_bistre;
-      }
-    }
-    .navbar-nav a.nav-link {
-      margin: 35px 0 28px;
-      padding: 0 20px;
-    }
-    .btn-dropdown {
-      display: none;
-    }
-    .navbar-nav div.dropdown-menu {
-      margin-top: -1px;
-      padding-bottom: 0;
-      .dropdown-item {
-        padding: 18px 90px 18px 18px;
-      }
+    .brand-img-size {
+      width: 120px;
+      height: 20.5px;
     }
   }
   .navbar-toggler {
@@ -50,17 +21,9 @@
   }
   .navbar-nav {
     line-height: 30px;
-    .home-container {
-      margin-top: 7px;
-    }
     .nav-link {
       background-color: transparent;
       color: $white;
-      @media (min-width: $breakpoint-xl) {
-        &:hover {
-          color: $gray_nobel;
-        }
-      }
     }
     .btn {
       padding: 0;
@@ -73,12 +36,10 @@
     }
     .dropdown-menu {
       border-radius: 0;
-      padding: 0;
-      padding-bottom: 15px;
+      padding: 15px 0;
     }
     .concept-dropdown {
       background-color: $black;
-      padding-top: 0;
       margin-top: 0;
       .dropdown-item {
         padding: 15px 0 15px 12px;
@@ -90,6 +51,44 @@
     }
     .download-container {
       margin-bottom: 7px;
+    }
+  }
+  @media (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+    margin: 0;
+    padding: 0 30px;
+    .navbar-brand {
+      margin-top: 0;
+      margin-bottom: 0;
+      .brand-img-size {
+        width: 140px;
+        height: 24px;
+      }
+    }
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      .dropdown-item:hover {
+        transition: background-color 0.2s ease;
+        background-color: $orange_bistre;
+      }
+    }
+    .navbar-nav .nav-link {
+      margin: 35px 0;
+      padding: 0 20px;
+      &:hover {
+        color: $gray_nobel;
+      }
+    }
+    .btn-dropdown {
+      display: none;
+    }
+    .navbar-nav .dropdown-menu {
+      margin-top: -1px;
+      padding-top: 0;
+      padding-bottom: 0;
+      .dropdown-item {
+        padding: 18px 90px 18px 18px;
+      }
     }
   }
 }
