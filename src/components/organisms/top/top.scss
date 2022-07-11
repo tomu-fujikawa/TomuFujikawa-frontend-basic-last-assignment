@@ -5,11 +5,14 @@
     position: relative;
     .top-img {
       width: 100%;
-      height: 360px;
+      height: 320px;
       object-fit: cover;
       object-position: 0 93%;
+      @media (min-width: $breakpoint-md) {
+        height: 360px;
+      }
       @media (min-width: $breakpoint-lg) {
-        height: auto;
+        height: 580px;
       }
     }
     .top-p-on-img {
@@ -25,20 +28,25 @@
       font-size: $fontsize-l;
       @media (min-width: $breakpoint-lg) {
         line-height: 52px;
-        left: 50%;
         font-size: $fontsize-xl;
       }
     }
   }
   .message-container {
     background-color: $black;
-    padding: 0 135px;
+    padding: 0 50px;
+    @media (min-width: $breakpoint-md) {
+      padding: 0 135px;
+    }
     @media (min-width: $breakpoint-lg) {
       padding: 0 16px;
     }
     .message {
-      padding: 32px 25px;
       color: $white;
+      padding: 25px 30px;
+      @media (min-width: $breakpoint-md) {
+        padding: 32px 25px;
+      }
       @media (min-width: $breakpoint-lg) {
         padding: 52px 21px 74px;
       }
