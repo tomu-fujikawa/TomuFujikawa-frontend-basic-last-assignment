@@ -1,45 +1,47 @@
 @use "../../variables" as *;
 
-.top-img-and-p {
-  position: relative;
-  .top-img {
-    width: 100%;
-    height: 360px;
-    object-fit: cover;
-    object-position: 0 93%;
-    @media (min-width: $breakpoint-lg) {
-      height: auto;
+.top {
+  .top-img-and-p {
+    position: relative;
+    .top-img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      object-position: 0 93%;
+      @media (min-width: $breakpoint-lg) {
+        height: auto;
+      }
     }
-  }
-  .top-p-on-img {
-    margin: 0;
-    writing-mode: vertical-rl;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-bottom: 0;
-    color: $white;
-    font-family: $fontfamily-mincho;
-    font-size: $fontsize-l;
-    @media (min-width: $breakpoint-lg) {
+    .top-p-on-img {
+      line-height: 29px;
+      margin: 0;
+      writing-mode: vertical-rl;
+      position: absolute;
+      top: 50%;
       left: 50%;
-      font-size: $fontsize-xl;
+      transform: translate(-50%, -50%);
+      color: $white;
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-l;
+      @media (min-width: $breakpoint-lg) {
+        line-height: 52px;
+        left: 50%;
+        font-size: $fontsize-xl;
+      }
     }
   }
-}
-.top-message {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  .message-title-and-content-wrap {
-    color: $white;
+  .message-container {
     background-color: $black;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 0 135px;
     @media (min-width: $breakpoint-lg) {
-      padding-top: 52px;
-      padding-bottom: 74px;
+      padding: 0 16px;
+    }
+    .message {
+      padding: 32px 25px;
+      color: $white;
+      @media (min-width: $breakpoint-lg) {
+        padding: 52px 21px 74px;
+      }
     }
   }
 }

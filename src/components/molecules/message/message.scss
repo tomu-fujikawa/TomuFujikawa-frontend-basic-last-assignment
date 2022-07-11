@@ -6,12 +6,12 @@
   .message-title {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-l;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     line-height: 30px;
   }
   .message-content {
     font-size: $fontsize-s;
-    line-height: 36px;
+    line-height: 28px;
     margin-bottom: 0px;
   }
 
@@ -25,7 +25,7 @@
       line-height: 54px;
     }
     .message-content {
-      line-height: 28px;
+      line-height: 36px;
     }
   }
 }
