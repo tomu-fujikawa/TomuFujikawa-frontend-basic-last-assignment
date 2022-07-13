@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+.plans {
+  .message {
+    padding: 0 25px 32px;
+    .message-title {
+      color: $orange_bistre;
+    }
+  }
+  .plan-container {
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      justify-content: center;
+    }
+    .plan {
+      margin-bottom: 24px;
+      @media (min-width: $breakpoint-md) {
+        margin: 0 15px 40px;
+      }
+      .plan-descriptions-blank {
+        padding: 0 12px;
+      }
+    }
+  }
+  .button-container {
+    text-align: center;
+  }
+}
