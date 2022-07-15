@@ -15,10 +15,12 @@
     .news-day-and-theme-wrap {
       margin: 20px;
       .news-day {
+        line-height: 12px;
         color: $gray_nobel;
         font-size: $fontsize-xs;
       }
       .news-theme {
+        line-height: 23px;
         margin: 10px 0 0;
         font-size: $fontsize-m;
         width: 90%;
