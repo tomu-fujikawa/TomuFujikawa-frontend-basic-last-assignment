@@ -18,6 +18,7 @@
         i {
           color: $black;
           margin: 0 7px;
+          transition: ease 0.2s;
           &:hover {
             color: $gray_nobel;
           }
@@ -47,10 +48,9 @@
   }
   .copyright-container {
     background-color: $black;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     .copyright {
-      word-break: break-all;
+      display: inline-block;
       color: $white;
       font-size: $fontsize-xs;
       line-height: 12px;
