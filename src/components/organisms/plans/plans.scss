@@ -11,7 +11,7 @@
   .plan-container {
     @media (min-width: $breakpoint-md) {
       display: flex;
-      align-items: baseline;
+      align-items: flex-start;
       justify-content: center;
     }
     .plan {
@@ -21,7 +21,7 @@
         margin: 0 15px 40px;
       }
       .plan-descriptions-blank {
-        padding: 0;
+        padding: 0 10px;
       }
     }
   }
