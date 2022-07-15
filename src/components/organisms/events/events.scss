@@ -1,6 +1,9 @@
 @use "../../variables" as *;
 
 .events {
+  .english {
+    margin: 0 16px 0 0;
+  }
   .events-border {
     border: solid 1px $gray_gainsboro;
     &:not(:last-of-type) {
@@ -44,6 +47,7 @@
     margin: 30px 0 35px;
   }
   @media (min-width: $breakpoint-lg) {
+    width: 48%;
     .events-border {
       .events-href {
         display: flex;
@@ -59,6 +63,7 @@
         }
       }
       .events-theme-and-day-wrap {
+        width: 239px;
         padding: 0 24px;
       }
     }
