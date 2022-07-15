@@ -1,23 +1,27 @@
 @use "../../variables" as *;
 .plans {
   .message {
-    padding: 0 25px 32px;
+    padding: 0;
+    margin: 0 25px 32px;
     .message-title {
+      margin-bottom: 6px;
       color: $orange_bistre;
     }
   }
   .plan-container {
     @media (min-width: $breakpoint-md) {
       display: flex;
+      align-items: baseline;
       justify-content: center;
     }
     .plan {
       margin-bottom: 24px;
       @media (min-width: $breakpoint-md) {
+        flex: 1;
         margin: 0 15px 40px;
       }
       .plan-descriptions-blank {
-        padding: 0 12px;
+        padding: 0;
       }
     }
   }
