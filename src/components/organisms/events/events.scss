@@ -47,12 +47,12 @@
     margin: 30px 0 35px;
   }
   @media (min-width: $breakpoint-lg) {
-    width: 48%;
     .events-border {
       .events-href {
         display: flex;
       }
       .events-img-hidden {
+        flex-shrink: 0;
         overflow: hidden;
         width: 221px;
         .events-img {
@@ -63,7 +63,7 @@
         }
       }
       .events-theme-and-day-wrap {
-        width: 239px;
+        min-width: 0;
         padding: 0 24px;
       }
     }
