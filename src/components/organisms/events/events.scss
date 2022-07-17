@@ -1,6 +1,9 @@
 @use "../../variables" as *;
 
 .events {
+  .english {
+    margin: 0 16px 0 0;
+  }
   .events-border {
     border: solid 1px $gray_gainsboro;
     &:not(:last-of-type) {
@@ -49,6 +52,7 @@
         display: flex;
       }
       .events-img-hidden {
+        flex-shrink: 0;
         overflow: hidden;
         width: 221px;
         .events-img {
@@ -59,6 +63,7 @@
         }
       }
       .events-theme-and-day-wrap {
+        min-width: 0;
         padding: 0 24px;
       }
     }
