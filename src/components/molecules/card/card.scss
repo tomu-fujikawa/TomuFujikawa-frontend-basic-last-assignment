@@ -45,7 +45,11 @@
       display: inline-block;
       text-align: left;
       font-size: $fontsize-s;
-      margin: 32px 50px 30px 50px;
+      margin: 32px 46px 30px;
+      line-height: 33px;
+      @media (min-width: $breakpoint-md) {
+        margin: 32px 35px 30px;
+      }
     }
   }
 }
