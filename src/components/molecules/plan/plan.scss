@@ -29,16 +29,15 @@
     padding: 20px 0;
   }
   .price-container {
-    .¥-font-adjustment {
-      font-size: $fontsize-l;
-      color: $orange_bistre;
-      vertical-align: sub;
-      @include font-weight-700;
-    }
     .figure {
       font-size: $fontsize-xxl;
       color: $orange_bistre;
       @include font-weight-700;
+      &:before {
+        content: "¥";
+        font-size: $fontsize-l;
+        margin-right: 4px;
+      }
     }
     .monthly-price {
       margin-top: 16px;
