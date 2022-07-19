@@ -1,0 +1,11 @@
+@use "../../variables" as *;
+.news-and-events {
+  .events-border .events-href .events-theme-and-day-wrap .events-theme {
+    @media (min-width: $breakpoint-lg) {
+      white-space: normal;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
