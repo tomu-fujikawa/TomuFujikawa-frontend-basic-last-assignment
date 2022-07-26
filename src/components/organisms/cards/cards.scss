@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .card-container {
+  margin: 40px 0 100px;
   @media (min-width: $breakpoint-md) {
     display: flex;
     .card {
