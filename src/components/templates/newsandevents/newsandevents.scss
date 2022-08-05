@@ -2,6 +2,9 @@
 .news-and-events {
   padding-top: 65.5px;
   background-color: $white_smoke;
+  article {
+    background-color: $white;
+  }
   .events-border-wrap
     .events-border
     .events-href
