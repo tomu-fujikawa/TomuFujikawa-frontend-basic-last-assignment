@@ -1,5 +1,7 @@
 @use "../../variables" as *;
 .news-and-events {
+  padding-top: 65.5px;
+  background-color: $white_smoke;
   .events-border-wrap
     .events-border
     .events-href
