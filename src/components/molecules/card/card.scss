@@ -2,8 +2,6 @@
 
 .card {
   position: relative;
-  background-color: $white_smoke;
-  padding-bottom: 32px;
   &:before {
     content: "";
     position: absolute;
@@ -38,6 +36,7 @@
     z-index: 20;
   }
   .card-body {
+    background-color: $white_smoke;
     word-break: break-all;
     padding: 0;
     text-align: center;
