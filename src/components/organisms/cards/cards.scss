@@ -1,19 +1,23 @@
 @use "../../variables" as *;
-
-.card-container {
-  margin: 40px 0 100px;
-  @media (min-width: $breakpoint-md) {
-    display: flex;
-    .card {
-      flex: 1;
-      margin-left: 12px;
-      margin-right: 12px;
-      margin-bottom: 0;
+.cards {
+  width: 76%;
+  margin-right: auto;
+  margin-left: auto;
+  .card-container {
+    margin: 40px 0 100px;
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      .card {
+        flex: 1;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 0;
+      }
     }
-  }
-  .card {
-    .card-body {
-      padding-bottom: 32px;
+    .card {
+      .card-body {
+        padding-bottom: 32px;
+      }
     }
   }
 }
