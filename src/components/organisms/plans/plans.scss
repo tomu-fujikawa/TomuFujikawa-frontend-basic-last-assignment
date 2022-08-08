@@ -1,6 +1,9 @@
 @use "../../variables" as *;
 .plans {
+  width: 76%;
   margin: 100px 0;
+  margin-right: auto;
+  margin-left: auto;
   .message {
     padding: 0;
     margin: 0 25px 32px;
