@@ -1,10 +1,9 @@
 @use "../../variables" as *;
 .cards {
-  width: 60%;
+  margin: 40px 0 100px;
   margin-right: auto;
   margin-left: auto;
   .card-container {
-    margin: 40px 0 100px;
     @media (min-width: $breakpoint-md) {
       display: flex;
       .card {
