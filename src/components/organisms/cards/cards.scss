@@ -1,6 +1,9 @@
 @use "../../variables" as *;
 .cards {
-  margin: 40px 0 100px;
+  margin: 20px 0;
+  @media (min-width: $breakpoint-md) {
+    margin: 40px 0 100px;
+  }
   margin-right: auto;
   margin-left: auto;
   .card-container {
@@ -14,6 +17,9 @@
       }
     }
     .card {
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 20px;
+      }
       .card-body {
         padding-bottom: 32px;
       }
