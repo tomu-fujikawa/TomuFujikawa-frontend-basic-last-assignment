@@ -1,6 +1,15 @@
 @use "../../variables" as *;
 .news-and-events {
-  .events-border .events-href .events-theme-and-day-wrap .events-theme {
+  padding-top: 65.5px;
+  background-color: $white_smoke;
+  article {
+    background-color: $white;
+  }
+  .events-border-wrap
+    .events-border
+    .events-href
+    .events-theme-and-day-wrap
+    .events-theme {
     @media (min-width: $breakpoint-lg) {
       white-space: normal;
       display: -webkit-box;
